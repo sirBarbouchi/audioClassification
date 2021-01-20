@@ -9,7 +9,8 @@ pipeline {
             }
             steps {
                 sh 'ls'
-                sh 'python app.py' 
+                sh 'export FLASK_APP=app'
+                sh 'flask run' 
             }
         }
     }

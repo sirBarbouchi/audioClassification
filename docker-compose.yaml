@@ -3,9 +3,8 @@ version: '3.7'
 services:
  server_container:
    image: server
-   privileged: true
    ports:
-    - 6000:6000
+    - 5001:5001
  jenkins_container:
    image: jenkins
    privileged: true
