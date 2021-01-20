@@ -8,9 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'ls'
                 sh 'python app.py'
-
             }
         }
     }
