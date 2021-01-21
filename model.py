@@ -15,7 +15,6 @@ def extractMelSpectrogram_features(folder):
     hop_length = 512
     n_fft = 2048
     n_mels = 128
-    types = ["disco", "jazz"]
     labels = {'blues': 0, 'classical': 1, 'country': 2, 'disco': 3, 'hiphop': 4, 'jazz': 5, 'metal': 6, 'pop': 7, 'reggae': 8, 'rock': 9}
     a = []
     b = []
@@ -45,7 +44,7 @@ def extractMelSpectrogram_features(folder):
 
 
 
-folder = "/home/user/Documents/miniprojet/Data/genres_original/"
+folder = "/home/khalil/Documents/archive/Data/genres_original/"
 a, b = extractMelSpectrogram_features(folder)
 print ("#Load mel features:")
 
